@@ -1,0 +1,104 @@
+@font-face{font-family: Chronos; src: url(Cronos_Pro_Regular.otf);}
+
+body{
+    font-family: Chronos, sans-serif;
+    margin: 0px;
+    padding: 0px;    
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(Images/WVW_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .left-side{
+    width: 30%;
+}
+.container .right-side{
+    width: 30%;
+}
+.container .middle-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .middle-side .TimerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.container .middle-side .TimerBox > h2{
+    text-align: center;
+    font-size: 3.5em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.container .middle-side .TimerBox .Timer{
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .middle-side .TimerBox .Timer > div{
+    position: relative;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0 15px ;
+    margin-top: -25px;
+}
+
+.container .middle-side .TimerBox .Timer > div:before{
+    content: 'text';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    color: #fff;
+    font-size: 0.5em;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container .middle-side .TimerBox .Timer > div#wvwday:before{
+    content: 'Days';
+}
+
+.container .middle-side .TimerBox .Timer > div#wvwhour:before{
+    content: 'Hours';
+}
+
+.container .middle-side .TimerBox .Timer > div#wvwminute:before{
+    content: 'Minutes';
+}
+
+.container .middle-side .TimerBox .Timer > div#wvwsecond:before{
+    content: 'Seconds';
+}
